@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DiviaQt</class>
+ <widget class="QMainWindow" name="DiviaQt">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>875</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>875</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>875</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Droid Sans</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>DiviaQt</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images/Images.qrc">
+    <normaloff>:/images/faviconDivia.png</normaloff>:/images/faviconDivia.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(60, 54, 56);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWebView" name="webView">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>875</width>
+      <height>831</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Droid Sans</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="url">
+     <url>
+      <string>http://nmp-ihm.ctp.prod.canaltp.fr/fr/load/b1xrL3Sf/</string>
+     </url>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_img_titre">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>861</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="images/Images.qrc">:/images/texteDivia.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_aPropos">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>0</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Droid Sans</family>
+     </font>
+    </property>
+    <property name="text">
+     <string extracomment="A propos"/>
+    </property>
+    <property name="icon">
+     <iconset resource="images/Images.qrc">
+      <normaloff>:/images/aPropos.png</normaloff>:/images/aPropos.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_img_chargement">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>60</y>
+      <width>841</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="images/Images.qrc">:/images/chargement.gif</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>lab_img_chargement</zorder>
+   <zorder>webView</zorder>
+   <zorder>lab_img_titre</zorder>
+   <zorder>btn_aPropos</zorder>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="images/Images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

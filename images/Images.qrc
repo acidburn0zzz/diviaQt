@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>texteDivia.png</file>
+        <file>aPropos.png</file>
+        <file>faviconDivia.png</file>
+        <file>chargement.gif</file>
+    </qresource>
+</RCC>
